@@ -45,6 +45,7 @@ bank-transaction-dashboard/
 Contains all application constants and configuration.
 
 **Key Constants:**
+
 - `APP_TITLE`: Application title
 - `APP_ICON`: Application icon
 - `DATA_PATH`: Path to data file
@@ -54,6 +55,7 @@ Contains all application constants and configuration.
 - `CATEGORY_COLORS`: Colors for each category
 
 **Usage:**
+
 ```python
 from config import CATEGORIES, COLOR_PALETTE
 ```
@@ -65,12 +67,16 @@ Utility functions for data processing.
 **Key Functions:**
 
 #### `load_data()`
+
 Load and parse transaction data from CSV.
+
 - **Returns**: DataFrame
 - **Raises**: Exception if file not found
 
 #### `filter_data(df, start_date, end_date, categories, transaction_types)`
+
 Filter DataFrame based on criteria.
+
 - **Args**:
   - `df`: DataFrame to filter
   - `start_date`: Start date (optional)
@@ -80,7 +86,9 @@ Filter DataFrame based on criteria.
 - **Returns**: Filtered DataFrame
 
 #### `calculate_summary(df)`
+
 Calculate summary statistics.
+
 - **Returns**: Dict with keys:
   - `total_income`: Total credit
   - `total_expense`: Total debit
@@ -88,14 +96,18 @@ Calculate summary statistics.
   - `transaction_count`: Number of transactions
 
 #### `get_category_summary(df)`
+
 Get summary per category.
+
 - **Returns**: DataFrame with columns:
   - `Kategori`: Category name
   - `Total`: Total amount
   - `Jumlah Transaksi`: Transaction count
 
 #### `get_monthly_summary(df)`
+
 Get monthly income/expense summary.
+
 - **Returns**: DataFrame with columns:
   - `Bulan`: Month period
   - `Income`: Total income
@@ -103,7 +115,9 @@ Get monthly income/expense summary.
   - `Balance`: Net balance
 
 #### `format_currency(amount)`
+
 Format number as Indonesian Rupiah.
+
 - **Args**: `amount` (float/int)
 - **Returns**: Formatted string (e.g., "Rp 1,000,000")
 
@@ -114,6 +128,7 @@ Reusable UI components.
 #### metrics.py
 
 **Functions:**
+
 - `summary_metrics(summary_data)`: Display 4-column summary
 - `category_metrics(category_summary, top_n)`: Display top N categories
 - `statistics_metrics(stats)`: Display descriptive statistics
@@ -122,6 +137,7 @@ Reusable UI components.
 #### charts.py
 
 **Functions:**
+
 - `pie_chart(data, labels, title, colors)`: Create pie chart
 - `bar_chart(data, x, y, title, color, horizontal)`: Create bar chart
 - `line_chart(data, x, y, title, hue)`: Create line chart
@@ -135,6 +151,7 @@ Reusable UI components.
 #### filters.py
 
 **Functions:**
+
 - `date_range_filter(min_date, max_date, key_prefix)`: Date range picker
 - `category_filter(categories, key, default)`: Multi-select category
 - `transaction_type_filter(types, key, default)`: Multi-select type
@@ -146,6 +163,7 @@ Reusable UI components.
 #### tables.py
 
 **Functions:**
+
 - `transaction_table(df, show_index, height)`: Display formatted transaction table
 - `summary_table(df, title)`: Display summary table
 - `category_breakdown_table(category_summary)`: Category breakdown with progress bars
@@ -157,6 +175,7 @@ Reusable UI components.
 ### Multi-page Navigation
 
 Streamlit automatically creates navigation from files in `pages/` folder:
+
 - File naming: `N_emoji_PageName.py`
 - N: Order number (1, 2, 3, ...)
 - emoji: Optional emoji icon
@@ -183,10 +202,10 @@ def render_sidebar_filters():
 def main():
     """Main page logic"""
     st.title("Page Title")
-    
+
     # Get filtered data
     df = render_sidebar_filters()
-    
+
     # Render content
     # ...
 
@@ -204,6 +223,7 @@ Tanggal,Kategori,Tipe,Jumlah,Deskripsi,Saldo
 ```
 
 **Columns:**
+
 - `Tanggal` (datetime): Transaction date (YYYY-MM-DD)
 - `Kategori` (string): Category (must be in CATEGORIES)
 - `Tipe` (string): "Debit" or "Kredit"
@@ -216,6 +236,7 @@ Tanggal,Kategori,Tipe,Jumlah,Deskripsi,Saldo
 ### Add New Page
 
 1. Create file in `pages/`:
+
    ```
    pages/4_🎯_NewPage.py
    ```
@@ -227,6 +248,7 @@ Tanggal,Kategori,Tipe,Jumlah,Deskripsi,Saldo
 ### Add New Component
 
 1. Create function in appropriate component file:
+
    ```python
    # components/charts.py
    def new_chart(data, ...):
@@ -236,6 +258,7 @@ Tanggal,Kategori,Tipe,Jumlah,Deskripsi,Saldo
    ```
 
 2. Add to `__init__.py`:
+
    ```python
    from .charts import new_chart
    __all__ = [..., 'new_chart']
@@ -251,12 +274,13 @@ Tanggal,Kategori,Tipe,Jumlah,Deskripsi,Saldo
 ### Add New Category
 
 1. Edit `config.py`:
+
    ```python
    CATEGORIES = [
        'New Category',
        # ... existing
    ]
-   
+
    CATEGORY_COLORS = {
        'New Category': '#HexColor',
        # ... existing
@@ -271,6 +295,7 @@ Tanggal,Kategori,Tipe,Jumlah,Deskripsi,Saldo
 ### Add New Filter
 
 1. Create function in `components/filters.py`:
+
    ```python
    def new_filter(options, key):
        selected = st.selectbox("Label", options, key=key)
@@ -286,23 +311,27 @@ Tanggal,Kategori,Tipe,Jumlah,Deskripsi,Saldo
 ## Best Practices
 
 ### 1. Code Organization
+
 - Keep functions small and focused
 - Use docstrings for all functions
 - Follow Python naming conventions
 - Group related functionality
 
 ### 2. State Management
+
 - Use `st.session_state` for persistent data
 - Clear state when needed
 - Avoid redundant data loading
 
 ### 3. Performance
+
 - Cache expensive operations
 - Filter data before processing
 - Use efficient pandas operations
 - Limit data display size
 
 ### 4. Error Handling
+
 ```python
 try:
     data = load_data()
@@ -312,6 +341,7 @@ except Exception as e:
 ```
 
 ### 5. User Experience
+
 - Show loading states
 - Provide helpful error messages
 - Add tooltips and help text
@@ -333,6 +363,7 @@ except Exception as e:
 ### Test Data Generation
 
 Modify `generate_data.py` to create test scenarios:
+
 ```python
 # Edge cases
 n_transactions = 5  # Small dataset
@@ -361,12 +392,14 @@ DATA_PATH = os.getenv('DATA_PATH', 'data/bank_transactions.csv')
 ### Docker
 
 Build and run:
+
 ```bash
 docker build -t bank-dashboard .
 docker run -p 8501:8501 bank-dashboard
 ```
 
 Or use Docker Compose:
+
 ```bash
 docker-compose up
 ```
@@ -374,6 +407,7 @@ docker-compose up
 ### Heroku
 
 Deploy with Git:
+
 ```bash
 git init
 heroku create your-app-name
@@ -387,16 +421,19 @@ git push heroku main
 ### Common Issues
 
 1. **Port already in use**
+
    ```bash
    streamlit run app.py --server.port 8502
    ```
 
 2. **Module not found**
+
    ```bash
    pip install -r requirements.txt
    ```
 
 3. **Data not loading**
+
    - Check DATA_PATH in config.py
    - Verify CSV format
    - Check file permissions

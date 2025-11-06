@@ -164,7 +164,7 @@ def box_plot(data, x, y, title="Box Plot"):
     """
     fig, ax = plt.subplots(figsize=(12, 6))
     
-    sns.boxplot(data=data, x=x, y=y, ax=ax, palette="Set2")
+    sns.boxplot(data=data, x=x, y=y, ax=ax, hue=x, palette="Set2", legend=False)
     
     ax.set_xlabel(x, fontsize=11)
     ax.set_ylabel(y, fontsize=11)

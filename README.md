@@ -5,11 +5,13 @@ Dashboard analisis transaksi bank yang dibangun dengan Streamlit, Pandas, NumPy,
 ## ✨ Fitur
 
 ### 🏠 Home Page
+
 - Welcome screen dengan quick stats
 - Preview transaksi terbaru
 - Navigasi mudah ke halaman lain
 
 ### 📊 Dashboard
+
 - **Summary Metrics**: Total pemasukan, pengeluaran, saldo bersih, dan jumlah transaksi
 - **Distribusi Kategori**: Pie chart dan bar chart untuk pengeluaran per kategori
 - **Trend Bulanan**: Line chart untuk melihat trend pemasukan dan pengeluaran
@@ -18,6 +20,7 @@ Dashboard analisis transaksi bank yang dibangun dengan Streamlit, Pandas, NumPy,
 - **Filter**: Date range, kategori, dan tipe transaksi
 
 ### 📈 Analytics
+
 5 Sub-menu analisis mendalam:
 
 1. **Overview**: Breakdown debit vs kredit
@@ -27,6 +30,7 @@ Dashboard analisis transaksi bank yang dibangun dengan Streamlit, Pandas, NumPy,
 5. **Perbandingan**: Perbandingan 2 periode waktu
 
 ### 💳 Transactions
+
 - **Tabel Interaktif**: Semua transaksi dengan sorting dan pagination
 - **Filter Lengkap**: Date range, kategori, tipe, amount range, dan search
 - **Multiple Views**: Tabel, per kategori, dan statistik
@@ -90,24 +94,28 @@ Aplikasi akan terbuka di browser pada `http://localhost:8501`
 ## 🎨 Best Practices yang Diterapkan
 
 ### 1. **Modular Architecture**
+
 - Komponen dipisah ke folder `components/`
 - Setiap halaman di folder `pages/` dengan auto-navigation
 - Utility functions di `utils.py`
 - Configuration di `config.py`
 
 ### 2. **Reusable Components**
+
 - `metrics.py`: Reusable metric cards
 - `charts.py`: Reusable chart functions
 - `filters.py`: Reusable filter widgets
 - `tables.py`: Reusable table components
 
 ### 3. **Clean Code**
+
 - Docstrings untuk setiap function
 - Type hints untuk parameter
 - Consistent naming convention
 - Comments untuk logic yang kompleks
 
 ### 4. **User Experience**
+
 - Responsive layout dengan columns
 - Interactive filters di sidebar
 - Loading states dan error handling
@@ -115,12 +123,14 @@ Aplikasi akan terbuka di browser pada `http://localhost:8501`
 - Export functionality
 
 ### 5. **Data Management**
+
 - CSV sebagai data source
 - Pandas untuk efficient data processing
 - Caching dengan session state
 - Data validation dan filtering
 
 ### 6. **Visualization**
+
 - Matplotlib dan Seaborn untuk professional charts
 - Consistent color palette
 - Proper labels dan formatting
@@ -129,6 +139,7 @@ Aplikasi akan terbuka di browser pada `http://localhost:8501`
 ## 📊 Data Structure
 
 CSV memiliki kolom:
+
 - **Tanggal**: Tanggal transaksi (YYYY-MM-DD)
 - **Kategori**: Kategori transaksi (10 kategori)
 - **Tipe**: Debit atau Kredit
@@ -139,6 +150,7 @@ CSV memiliki kolom:
 ## 🎯 Fitur Filter
 
 ### Sidebar Filters
+
 1. **Date Range**: Pilih periode transaksi
 2. **Kategori**: Multi-select kategori
 3. **Tipe Transaksi**: Debit/Kredit
@@ -146,6 +158,7 @@ CSV memiliki kolom:
 5. **Search**: Cari berdasarkan deskripsi
 
 ### Sidebar Sub-menu
+
 - **Dashboard**: Filter standar
 - **Analytics**: 5 jenis analisis (Overview, Kategori, Time Series, Distribusi, Perbandingan)
 - **Transactions**: View options (Semua, Hanya Debit, Hanya Kredit, Kategori Tertentu)
@@ -162,11 +175,13 @@ CSV memiliki kolom:
 ### Heroku
 
 1. Buat `Procfile`:
+
 ```
 web: streamlit run app.py --server.port=$PORT
 ```
 
 2. Deploy:
+
 ```bash
 heroku create your-app-name
 git push heroku main
@@ -175,6 +190,7 @@ git push heroku main
 ### Docker
 
 1. Buat `Dockerfile`:
+
 ```dockerfile
 FROM python:3.9-slim
 WORKDIR /app
@@ -186,6 +202,7 @@ CMD ["streamlit", "run", "app.py"]
 ```
 
 2. Build dan run:
+
 ```bash
 docker build -t bank-dashboard .
 docker run -p 8501:8501 bank-dashboard
@@ -196,6 +213,7 @@ docker run -p 8501:8501 bank-dashboard
 ### Menambah Kategori Baru
 
 Edit `config.py`:
+
 ```python
 CATEGORIES = [
     'Kategori Baru',
@@ -211,6 +229,7 @@ CATEGORY_COLORS = {
 ### Menambah Chart Baru
 
 Buat function di `components/charts.py`:
+
 ```python
 def new_chart(data, ...):
     fig, ax = plt.subplots(figsize=(10, 6))
@@ -221,6 +240,7 @@ def new_chart(data, ...):
 ### Menambah Page Baru
 
 Buat file di `pages/`:
+
 ```
 pages/4_🎯_New_Page.py
 ```
