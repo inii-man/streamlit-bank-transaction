@@ -1,0 +1,101 @@
+Tanggal,Kategori,Tipe,Jumlah,Deskripsi,Saldo
+2025-08-08,Tagihan,Debit,359178,Streaming,4640822
+2025-08-09,Pendidikan,Debit,450410,Seminar,4190412
+2025-08-10,Lainnya,Debit,298167,Setor Tunai,3892245
+2025-08-11,Makanan & Minuman,Debit,209027,Cafe XYZ,3683218
+2025-08-11,Transport,Debit,194779,Gojek,3488439
+2025-08-12,Hiburan,Debit,412752,Netflix,3075687
+2025-08-13,Pendidikan,Debit,150523,Workshop,2925164
+2025-08-14,Belanja,Debit,134654,Lazada,2790510
+2025-08-15,Tagihan,Debit,373538,Streaming,2416972
+2025-08-16,Pendidikan,Debit,493254,Buku,1923718
+2025-08-17,Lainnya,Debit,225041,Tarik Tunai,1698677
+2025-08-18,Belanja,Debit,698531,Alfamart,1000146
+2025-08-19,Tagihan,Debit,356508,Internet,643638
+2025-08-20,Lainnya,Debit,220551,Administrasi,423087
+2025-08-21,Belanja,Debit,1439673,Alfamart,-1016586
+2025-08-21,Transport,Debit,47065,Parkir,-1063651
+2025-08-22,Pendidikan,Debit,60397,Workshop,-1124048
+2025-08-23,Makanan & Minuman,Debit,38247,McDonald's,-1162295
+2025-08-24,Belanja,Debit,1372905,Tokopedia,-2535200
+2025-08-25,Belanja,Debit,1335160,Indomaret,-3870360
+2025-08-26,Lainnya,Debit,322918,Transfer,-4193278
+2025-08-27,Investasi,Kredit,233767,Emas,-3959511
+2025-08-28,Transport,Debit,71858,Grab,-4031369
+2025-08-29,Pendidikan,Debit,346649,Kursus,-4378018
+2025-08-30,Lainnya,Debit,491819,Tarik Tunai,-4869837
+2025-08-31,Makanan & Minuman,Debit,92373,McDonald's,-4962210
+2025-08-31,Gaji,Kredit,6602279,THR,1640069
+2025-09-01,Kesehatan,Debit,159182,Klinik,1480887
+2025-09-02,Investasi,Kredit,1139577,Emas,2620464
+2025-09-03,Hiburan,Debit,142409,Konser,2478055
+2025-09-04,Makanan & Minuman,Debit,263550,Restoran ABC,2214505
+2025-09-05,Belanja,Debit,785716,Indomaret,1428789
+2025-09-06,Kesehatan,Debit,469036,Klinik,959753
+2025-09-07,Gaji,Kredit,9706971,Bonus,10666724
+2025-09-08,Pendidikan,Debit,129556,Workshop,10537168
+2025-09-09,Lainnya,Debit,462141,Setor Tunai,10075027
+2025-09-10,Belanja,Debit,618550,Tokopedia,9456477
+2025-09-10,Belanja,Debit,187848,Alfamart,9268629
+2025-09-11,Belanja,Debit,501269,Lazada,8767360
+2025-09-12,Tagihan,Debit,637833,Telepon,8129527
+2025-09-13,Transport,Debit,71087,Grab,8058440
+2025-09-14,Tagihan,Debit,139353,Telepon,7919087
+2025-09-15,Transport,Debit,164736,Tol,7754351
+2025-09-16,Belanja,Debit,863168,Shopee,6891183
+2025-09-17,Hiburan,Debit,372228,Bioskop,6518955
+2025-09-18,Gaji,Kredit,7372093,Bonus,13891048
+2025-09-19,Kesehatan,Debit,177381,Vitamin,13713667
+2025-09-20,Makanan & Minuman,Debit,183229,McDonald's,13530438
+2025-09-20,Gaji,Kredit,6080389,THR,19610827
+2025-09-21,Lainnya,Debit,375528,Administrasi,19235299
+2025-09-22,Hiburan,Debit,374050,Konser,18861249
+2025-09-23,Belanja,Debit,960681,Lazada,17900568
+2025-09-24,Lainnya,Debit,480486,Administrasi,17420082
+2025-09-25,Lainnya,Debit,239686,Tarik Tunai,17180396
+2025-09-26,Lainnya,Debit,486872,Transfer,16693524
+2025-09-27,Transport,Debit,40306,Parkir,16653218
+2025-09-28,Transport,Debit,157443,Parkir,16495775
+2025-09-29,Belanja,Debit,425037,Alfamart,16070738
+2025-09-30,Kesehatan,Debit,485910,Apotek,15584828
+2025-09-30,Belanja,Debit,640978,Alfamart,14943850
+2025-10-01,Lainnya,Debit,294327,Administrasi,14649523
+2025-10-02,Makanan & Minuman,Debit,199423,Warteg,14450100
+2025-10-03,Pendidikan,Debit,320504,Seminar,14129596
+2025-10-04,Lainnya,Debit,303501,Tarik Tunai,13826095
+2025-10-05,Hiburan,Debit,332252,Bioskop,13493843
+2025-10-06,Transport,Debit,101412,Parkir,13392431
+2025-10-07,Belanja,Debit,1067026,Tokopedia,12325405
+2025-10-08,Belanja,Debit,157450,Lazada,12167955
+2025-10-09,Gaji,Kredit,4983509,Komisi,17151464
+2025-10-10,Hiburan,Debit,312890,Spotify,16838574
+2025-10-10,Belanja,Debit,1468175,Tokopedia,15370399
+2025-10-11,Transport,Debit,55714,Parkir,15314685
+2025-10-12,Makanan & Minuman,Debit,202563,Warteg,15112122
+2025-10-13,Hiburan,Debit,325669,Netflix,14786453
+2025-10-14,Investasi,Kredit,1968836,Crypto,16755289
+2025-10-15,Tagihan,Debit,559451,Listrik PLN,16195838
+2025-10-16,Makanan & Minuman,Debit,283246,Restoran ABC,15912592
+2025-10-17,Belanja,Debit,739944,Shopee,15172648
+2025-10-18,Lainnya,Debit,465101,Tarik Tunai,14707547
+2025-10-19,Pendidikan,Debit,317921,Seminar,14389626
+2025-10-20,Belanja,Debit,208823,Tokopedia,14180803
+2025-10-20,Makanan & Minuman,Debit,69748,Cafe XYZ,14111055
+2025-10-21,Lainnya,Debit,49592,Lain-lain,14061463
+2025-10-22,Makanan & Minuman,Debit,273067,Restoran ABC,13788396
+2025-10-23,Makanan & Minuman,Debit,102922,Warteg,13685474
+2025-10-24,Kesehatan,Debit,144862,Klinik,13540612
+2025-10-25,Hiburan,Debit,201372,Spotify,13339240
+2025-10-26,Lainnya,Debit,90313,Setor Tunai,13248927
+2025-10-27,Makanan & Minuman,Debit,266451,Warteg,12982476
+2025-10-28,Lainnya,Debit,467237,Lain-lain,12515239
+2025-10-29,Transport,Debit,180806,Parkir,12334433
+2025-10-30,Makanan & Minuman,Debit,237866,Restoran ABC,12096567
+2025-10-30,Tagihan,Debit,727769,Air PDAM,11368798
+2025-10-31,Makanan & Minuman,Debit,198062,Restoran ABC,11170736
+2025-11-01,Gaji,Kredit,9669952,Bonus,20840688
+2025-11-02,Lainnya,Debit,197247,Transfer,20643441
+2025-11-03,Gaji,Kredit,5735988,Gaji Bulanan,26379429
+2025-11-04,Lainnya,Debit,160734,Lain-lain,26218695
+2025-11-05,Pendidikan,Debit,236139,Buku,25982556
+2025-11-06,Belanja,Debit,1052168,Indomaret,24930388
