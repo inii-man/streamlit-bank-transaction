@@ -39,6 +39,18 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
+# Sidebar Navigation Menu
+with st.sidebar:
+    st.title("🏦 Navigation")
+    
+    # Collapsible menu untuk halaman utama
+    with st.expander("📊 **Main Menu**", expanded=True):
+        st.page_link("app.py", label="🏠 Home", icon="🏠")
+        st.page_link("pages/1_📊_Dashboard.py", label="Dashboard", icon="📊")
+        st.page_link("pages/2_📈_Analytics.py", label="Analytics", icon="📈")
+        st.page_link("pages/3_💳_Transactions.py", label="Transactions", icon="💳")
+        st.page_link("pages/4_test.py")
+
 def main():
     """Main function untuk menampilkan home page"""
     
